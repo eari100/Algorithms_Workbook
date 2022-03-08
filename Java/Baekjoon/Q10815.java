@@ -24,7 +24,7 @@ public class Q10815 {
             binarySearch(0, nArr.length-1, sc.nextInt(), nArr);
 
         sc.close();
-        System.out.println(result);
+        System.out.print(result);
     }
 
     private static void binarySearch(int str, int end, int target, int[] nArr) {
