@@ -3,6 +3,10 @@ package Baekjoon;
 import java.io.*;
 import java.util.*;
 
+/**
+ *@source: https://www.acmicpc.net/problem/10773
+ *@classfication: stack
+ **/
 public class Q10773 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
