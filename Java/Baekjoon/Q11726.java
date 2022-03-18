@@ -5,6 +5,7 @@ import java.io.*;
 /**
  *@source: https://www.acmicpc.net/problem/11726 (2×n 타일링)
  *@classfication: dp
+ *@reference: https://kosaf04pyh.tistory.com/222
  **/
 public class Q11726 {
     public static void main(String[] args) throws IOException {
