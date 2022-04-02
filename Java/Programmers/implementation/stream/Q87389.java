@@ -1,4 +1,4 @@
-package Programmers;
+package Programmers.implementation.stream;
 
 import java.util.stream.IntStream;
 

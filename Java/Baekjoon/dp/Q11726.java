@@ -1,4 +1,4 @@
-package Baekjoon;
+package Baekjoon.dp;
 
 import java.io.*;
 
