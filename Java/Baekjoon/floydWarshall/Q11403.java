@@ -1,4 +1,4 @@
-package Baekjoon.floyWarshall;
+package Baekjoon.floydWarshall;
 
 import java.io.BufferedReader;
 import java.io.IOException;
