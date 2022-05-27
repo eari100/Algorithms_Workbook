@@ -3,6 +3,9 @@ package leetcode.string;
 /**
  * @source: https://leetcode.com/problems/valid-palindrome/
  * @classfication: string
+ * @reference:
+ * 1. two pointer: https://leetcode.com/problems/valid-palindrome/discuss/40029/Accepted-pretty-Java-solution(271ms)
+ * 2. regexp: https://leetcode.com/problems/valid-palindrome/discuss/39981/My-three-line-java-solution
  * @문제 푼 날짜 (자력으로 풂?)
  * 1. 22.05.27 (O)
  **/
