@@ -8,6 +8,7 @@ import java.util.stream.Collectors;
  * @source: https://www.acmicpc.net/problem/15663 (N과 M (9))
  * @classfication: backtracking
  * @문제 푼 날짜 (혼자 힘으로 풂?)
+ * @referece: https://www.acmicpc.net/source/43751051 (LinkedHashSet을 사용하지 않은 효율적인 풀이)
  * 1. 22.06.08 (O)
  **/
 public class Q15663 {
