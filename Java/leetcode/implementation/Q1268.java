@@ -7,7 +7,8 @@ import java.util.List;
 /**
  * @source: https://leetcode.com/problems/search-suggestions-system/ (Search Suggestions System)
  * @classfication: implementation
- * @reference: https://leetcode.com/problems/search-suggestions-system/discuss/436674/C%2B%2BJavaPython-Sort-and-Binary-Search-the-Prefix (TreeMap 을 사용하는 방법)
+ * @reference: https://leetcode.com/problems/search-suggestions-system/discuss/436674/C%2B%2BJavaPython-Sort-and-Binary-Search-the-Prefix
+ * (using TreeMap, O(N))
  * @문제 푼 날짜 (자력으로 풂?)
  * 1. 22.06.19 (O)
  **/
