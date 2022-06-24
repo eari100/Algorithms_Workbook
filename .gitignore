@@ -2,3 +2,7 @@
 .idea
 */out
 *.iml
+
+# scala environment
+/Scala/project/target/
+.bsp
