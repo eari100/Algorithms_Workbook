@@ -8,7 +8,7 @@ import scala.io.StdIn
  * @문제 푼 날짜 (자력으로 풂?)
  *     1. 22.06.24 (O)
  * */
-object Q2420 {
+object Main {
   def main(args: Array[String]): Unit = {
     val input = StdIn.readLine().split(" ")
     val N:Long = input(0).toLong
