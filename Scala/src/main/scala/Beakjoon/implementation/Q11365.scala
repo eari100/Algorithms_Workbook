@@ -15,7 +15,7 @@ object Q11365 {
     print(sb)
   }
 
-  def decoding(): Unit = {
+  def decoding: Unit = {
     val str = StdIn.readLine
     if(str == "END") return
     sb.append(str.reverse).append('\n')
