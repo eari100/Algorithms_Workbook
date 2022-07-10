@@ -4,7 +4,7 @@ package leetcode.dp;
  * @source: https://leetcode.com/problems/min-cost-climbing-stairs/ (Min Cost Climbing Stairs)
  * @classfication: dp
  * @문제 푼 날짜 (자력으로 풂?)
- * 1. 22.07.10 (O)
+ * 1. 22.07.10 (O, Memory Usage: 43.7 MB, less than 50.06%)
  **/
 public class Q746 {
     public int minCostClimbingStairs(int[] cost) {
