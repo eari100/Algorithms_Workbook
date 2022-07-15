@@ -7,7 +7,7 @@ import java.util.Queue;
  * @source: https://leetcode.com/problems/max-area-of-island/ (Max Area of Island)
  * @classfication: bfs
  * @문제 푼 날짜 (혼자 힘으로 풂?)
- * 2. 22.07.15 (O)
+ * 1. 22.07.15 (O)
  **/
 public class Q695 {
     static int[] nx;
