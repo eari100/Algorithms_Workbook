@@ -1,4 +1,4 @@
-package Baekjoon.dfs_bfs;
+package Baekjoon.cumulativeSum;
 
 import java.io.BufferedReader;
 import java.io.IOException;
