@@ -1,4 +1,4 @@
-package Baekjoon.greedy;
+package Baekjoon.greedy.Q1449;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -7,39 +7,40 @@ import java.util.Arrays;
 import java.util.StringTokenizer;
 
 /**
- *@source: https://www.acmicpc.net/problem/1449 (수리공 항승)
- *@classfication: greedy
- * @문제 푼 날짜 (자력으로 풂?)
- * 1. 22.08.06 (O)
+ * @source: https://www.acmicpc.net/problem/1449 (수리공 항승)
+ * @classfication: greedy
+ * @문제 푼 날짜 (자력으로 풂?): 22.09.26 (O)
  **/
-public class Q1449 {
+public class B {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-
         StringTokenizer st = new StringTokenizer(br.readLine());
         int N = Integer.parseInt(st.nextToken());
         int L = Integer.parseInt(st.nextToken());
-
         int[] holes = new int[N];
+        int result = 1;
 
         st = new StringTokenizer(br.readLine());
         for(int i=0;i<N;i++)
             holes[i] = Integer.parseInt(st.nextToken());
 
-        br.close();
-
         Arrays.sort(holes);
 
-        int tapeCnt = 0;
-        double maxTape = 0;
+        double last = holes[0] - 0.5 + L;
 
-        for(int hole : holes) {
-            if(hole + 0.5 > maxTape) {
-                maxTape = hole + L;
-                ++tapeCnt;
+        for(int i=1;i<N;i++) {
+            double x = holes[i] - 0.5;
+            if(x > last) {
+                last = holes[i] - 0.5 + L;
+                ++result;
+            } else if(x == last) {
+                last += L;
+                ++result;
             }
         }
 
-        System.out.print(tapeCnt);
+        br.close();
+
+        System.out.print(result);
     }
 }
