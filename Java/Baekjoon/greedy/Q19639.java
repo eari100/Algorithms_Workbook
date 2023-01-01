@@ -18,8 +18,7 @@ public class Q19639 {
 
         int X = Integer.parseInt(st.nextToken());
         int Y = Integer.parseInt(st.nextToken());
-        int M = Integer.parseInt(st.nextToken());
-        int HP =M;
+        int HP = Integer.parseInt(st.nextToken());
 
         StringBuilder result = new StringBuilder();
 
