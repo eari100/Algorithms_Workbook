@@ -9,6 +9,7 @@ import java.io.InputStreamReader;
  * @classfication: backtracking
  * @문제 푼 날짜 (자력으로 풂?): 23.04.22 (O, 0이라는 카드는 존재하지 못한다는 케이스를 잘 생각하지 못함)
  **/
+// todo: dp(정해)로도 풀어볼 것
 public class Q2591 {
     static int combinations;
 
