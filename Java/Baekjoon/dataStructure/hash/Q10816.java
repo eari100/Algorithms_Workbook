@@ -12,6 +12,7 @@ import java.util.StringTokenizer;
  * @문제 푼 날짜 (자력으로 풂?): 23.04.22 (O)
  **/
 // 이분 탐색으로도 풀어볼 것
+// 카운팅 정렬로도 풀어볼 것
 public class Q10816 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
