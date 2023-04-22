@@ -22,13 +22,8 @@ public class Q10816 {
 
         for(int i=0;i<N;i++) {
             int num = Integer.parseInt(nums1.nextToken());
-
-            if(hashMap.containsKey(num))
-                hashMap.put(num, hashMap.get(num)+1);
-            else
-                hashMap.put(num, 1);
+            hashMap.put(num, hashMap.getOrDefault(num, 0)+1);
         }
-
 
         int M = Integer.parseInt(br.readLine());
 
@@ -36,9 +31,7 @@ public class Q10816 {
 
         for(int i=0;i<M;i++) {
             int num = Integer.parseInt(nums2.nextToken());
-            int value = hashMap.containsKey(num) ? hashMap.get(num) : 0;
-
-            result.append(value).append(' ');
+            result.append(hashMap.getOrDefault(num, 0)).append(' ');
         }
 
         br.close();
