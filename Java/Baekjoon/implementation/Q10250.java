@@ -16,19 +16,16 @@ public class Q10250 {
         StringBuilder result = new StringBuilder();
         int T = Integer.parseInt(br.readLine());
 
-        while(T-- > 0) {
+        while (T-- > 0) {
             StringTokenizer data = new StringTokenizer(br.readLine());
 
             int H = Integer.parseInt(data.nextToken());
             int W = Integer.parseInt(data.nextToken());
             int N = Integer.parseInt(data.nextToken());
 
-            int share = N / H;
-            int remain = N % H;
-            int roomFrontNumber = getRoomFrontNumber(remain, H);
-            String roomBackNumber = getRoomBackNumber(share, remain);
+            int roomNumber = getRoomNumber(N, H);
 
-            result.append(roomFrontNumber).append(roomBackNumber).append('\n');
+            result.append(roomNumber).append('\n');
         }
 
         br.close();
@@ -36,14 +33,9 @@ public class Q10250 {
         System.out.print(result);
     }
 
-    private static int getRoomFrontNumber(int remain, int H) {
-        return remain == 0 ? H : remain;
-    }
-
-    private static String getRoomBackNumber(int share, int remain) {
-        int roomBackNumber = remain == 0 ? share : share + 1;
-        String 두_자리수로_이뤄진_RoomBackNumber = roomBackNumber < 10 ? "0" + roomBackNumber : String.valueOf(roomBackNumber);
-
-        return 두_자리수로_이뤄진_RoomBackNumber;
+    private static int getRoomNumber(int N, int H) {
+        int share = N / H;
+        int remain = N % H;
+        return (remain == 0) ? H * 100 + share : remain * 100 + share + 1;
     }
 }
