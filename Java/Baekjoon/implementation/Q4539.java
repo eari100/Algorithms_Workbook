@@ -9,7 +9,7 @@ import java.io.InputStreamReader;
  * @classfication: implementation, math
  * @문제 푼 날짜 (자력으로 풂?): 23.04.26 (O)
  **/
-// todo: Math 클래스를 없이 직접 수학적으로 구현해볼
+// todo: Math 클래스를 없이 직접 수학적으로 구현해볼 것
 public class Q4539 {
     public static void main(String[] args) throws IOException {
      BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
