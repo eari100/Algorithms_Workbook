@@ -12,6 +12,7 @@ import java.util.StringTokenizer;
  * @classfication: bfs, backtracking
  * @문제 푼 날짜 (자력으로 풂?)
  * 1. 22.05.24 (X, 벽 3개 쌓는 부분 backtracking 하는 방법 참고, https://hongcoding.tistory.com/m/130)
+ * 2. 23.04.28 (X, 벽 3개 쌓는 부분 삼중 for문으로 구상을 못해서 업솔빙 실패, https://www.acmicpc.net/source/21403174 이렇게 하고 싶었음)
  **/
 public class Q14502 {
     static int[][] graph;
