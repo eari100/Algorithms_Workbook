@@ -5,7 +5,8 @@ import java.io.IOException;
 /**
  * @source: https://www.acmicpc.net/problem/4673 (셀프 넘버)
  * @classfication: math, implementation
- * @문제 푼 날짜 (자력으로 풂?): 23.04.28 (O, 수식 세우는 데 시간이 걸림)
+ * @문제 푼 날짜 (자력으로 풂?): 23.04.29 (O, 수식 세우는 데 시간이 걸림)
+ * @reference: https://www.acmicpc.net/source/49932222(더 좋은 풀이)
  **/
 public class Q4673 {
     public static void main(String[] args) throws IOException {
