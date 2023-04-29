@@ -9,6 +9,7 @@ import java.util.StringTokenizer;
  * @source: https://www.acmicpc.net/problem/14889 (스타트와 링크)
  * @classfication: implementation
  * @문제 푼 날짜 (자력으로 풂?): 23.04.29 (O)
+ * @reference: https://www.acmicpc.net/source/58349778 (더 효율적인 방법)
  **/
 public class Q14889 {
     static boolean[] startTeam;
