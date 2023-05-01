@@ -13,6 +13,7 @@ import java.util.StringTokenizer;
  * @classfication: implementation, bfs
  * @문제 푼 날짜 (자력으로 풂?): 23.05.01 (O)
  **/
+// todo: 유니온 파인드로 속도 개선을 가능하다고 한다.
 public class Q16234 {
     final static int[] nX = {-1, 1, 0, 0};
     final static int[] nY = {0, 0, -1, 1};
