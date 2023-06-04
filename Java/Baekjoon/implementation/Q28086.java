@@ -14,7 +14,6 @@ public class Q28086 {
     static String operand1, operand2;
     static long result;
     static String octalResult;
-    static boolean invalid;
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -23,14 +22,14 @@ public class Q28086 {
 
         getOperands(prompt);
 
-        long decimalOperand1 = octalToDecimal(operand1);
-        long decimalOperand2 = octalToDecimal(operand2);
+        long decimalOperand1 = Long.parseLong(operand1, 8);
+        long decimalOperand2 = Long.parseLong(operand2, 8);
 
         calculate(decimalOperand1, decimalOperand2, operator);
 
         octalResult = result < 0 ? new StringBuilder().append('-').append(Long.toOctalString(result*-1)).toString() : Long.toOctalString(result);
 
-        System.out.println(invalid ? "invalid" : octalResult);
+        System.out.println(octalResult);
     }
 
     private static void getOperands(String prompt) {
@@ -53,22 +52,6 @@ public class Q28086 {
         operand2 = operand.toString();
     }
 
-    private static long octalToDecimal(String octalNumber) {
-        int octal = 0, weight = 0, lastNumberIndex = -1;
-        boolean minusFlag = false;
-
-        if(octalNumber.charAt(0) == '-') {
-            minusFlag = true;
-            ++lastNumberIndex;
-        }
-
-        for(int i=octalNumber.length()-1;i>lastNumberIndex;i--) {
-            octal += ( Math.pow(8, weight++) * Character.getNumericValue(octalNumber.charAt(i)) );
-        }
-
-        return minusFlag ? -octal : octal;
-    }
-
     private static void calculate(long operand1, long operand2, char operator) {
         if(operator == '+') {
             result = operand1 + operand2;
@@ -78,7 +61,8 @@ public class Q28086 {
             result = operand1 * operand2;
         } else if(operator == '/') {
             if(operand2 == 0) {
-                invalid = true;
+                System.out.print("invalid");
+                System.exit(0);
             } else {
                 result = (long) Math.floor((double) operand1 / operand2);
             }
