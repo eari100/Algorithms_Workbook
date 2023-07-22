@@ -9,6 +9,7 @@ import java.util.StringTokenizer;
  * @source: https://www.acmicpc.net/problem/2174 (로봇 시뮬레이션)
  * @classfication: implementation
  * @문제 푼 날짜 (자력으로 풂?): 23.07.22 (O)
+ * @reference: https://nordic.icpc.io/ncpc2005/ (문제 출처)
  **/
 public class Q2174 {
     final static int[] nX = {0, 1, 0, -1};
