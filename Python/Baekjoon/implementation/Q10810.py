@@ -1,3 +1,4 @@
+# @source: https://www.acmicpc.net/problem/10810 (공 넣기)
 N, M = map(int, input().split())
 _list = [0] * N
 
