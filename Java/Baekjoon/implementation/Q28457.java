@@ -5,6 +5,12 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
+/**
+ * @source: https://www.acmicpc.net/problem/28457 (Every? Only One's Marble)
+ * @classfication: implementation
+ * @upsolving: true
+ * @문제 푼 날짜 (자력으로 풂?): 23.08.15 (O, 구현 문제는 지문을 꼼꼼하게 읽을 것)
+ **/
 public class Q28457 {
     static final String WIN = "WIN";
     static final String LOSE = "LOSE";
