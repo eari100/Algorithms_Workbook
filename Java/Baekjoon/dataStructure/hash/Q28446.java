@@ -7,7 +7,7 @@ import java.util.HashMap;
 import java.util.StringTokenizer;
 
 /**
- * https://www.acmicpc.net/problem/28446 (볼링공 찾아주기)
+ * @source: https://www.acmicpc.net/problem/28446 (볼링공 찾아주기)
  * @classfication: hashmap, implementation
  * @문제 푼 날짜 (자력으로 풂?): 23.08.12 (O)
  **/

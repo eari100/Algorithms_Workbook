@@ -7,7 +7,7 @@ import java.util.StringTokenizer;
 import java.util.TreeSet;
 
 /**
- * https://www.acmicpc.net/problem/28445 (알록달록 앵무새)
+ * @source: https://www.acmicpc.net/problem/28445 (알록달록 앵무새)
  * @classfication: treemap, implementation
  * @문제 푼 날짜 (자력으로 풂?): 23.08.12 (O)
  **/
