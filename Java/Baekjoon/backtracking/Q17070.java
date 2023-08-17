@@ -10,6 +10,7 @@ import java.util.StringTokenizer;
  * @classfication: backtracking
  * @문제 푼 날짜 (자력으로 풂?): 23.08.17 (O)
  **/
+// todo: dp로 풀어볼 것
 public class Q17070 {
     static int answer = 0;
     static final int[] nNodeX = {0, 1, 1}; // →, ↘, ↓
