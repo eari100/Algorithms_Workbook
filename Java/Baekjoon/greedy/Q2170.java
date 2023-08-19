@@ -11,6 +11,7 @@ import java.util.StringTokenizer;
  * @classfication: Greedy
  * @문제 푼 날짜 (자력으로 풂?): 23.08.19 (O)
  **/
+// todo: 스위핑으로도 풀어 볼 것
 public class Q2170 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
