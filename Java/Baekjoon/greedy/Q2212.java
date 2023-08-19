@@ -10,7 +10,7 @@ import java.util.Collections;
 /**
  * @source: https://www.acmicpc.net/problem/2212 (센서)
  * @classfication: Greedy
- * @문제 푼 날짜 (자력으로 풂?): 22.08.19 (X, 비슷한 유형을 푼 적이 있었는데 업솔빙 실패)
+ * @문제 푼 날짜 (자력으로 풂?): 23.08.19 (X, 비슷한 유형을 푼 적이 있었는데 업솔빙 실패)
  **/
 public class Q2212 {
     public static void main(String[] args) throws IOException {
