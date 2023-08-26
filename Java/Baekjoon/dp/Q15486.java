@@ -10,6 +10,7 @@ import java.util.Arrays;
  * @classfication: dp
  * @문제 푼 날짜 (자력으로 풂?): 23.08.26 (O, 2시간 이상 걸린 듯)
  **/
+// advice: 여러 문제를 한번에 푸는 것이 아니라 분할해서 풀 것
 public class Q15486 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
