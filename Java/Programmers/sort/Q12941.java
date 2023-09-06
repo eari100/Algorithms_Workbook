@@ -1,4 +1,4 @@
-package Baekjoon.sort;
+package Programmers.sort;
 
 import java.util.Arrays;
 
