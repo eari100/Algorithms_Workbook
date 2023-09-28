@@ -8,7 +8,7 @@ import java.util.StringTokenizer;
 /**
  * @source: https://www.acmicpc.net/problem/1117 (색칠 1)
  * @classfication: implementation, math
- * @문제 푼 날짜 (자력으로 풂?): 23.09.23 (O, 큰 수 연산 W*H 조심);
+ * @문제 푼 날짜 (자력으로 풂?): 23.09.28 (O, 큰 수 연산 W*H 조심)
  **/
 // todo: 깔끔한 공식으로 정리할 것
 public class Q1117 {
