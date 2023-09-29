@@ -1,9 +1,6 @@
 N, M = map(int, input().split())
 prevPoints = [[-1, -1], [-1, 0], [0, -1]]
-memo = []
-
-for _ in range(N):
-    memo.append(list(map(int, input().split())))
+memo = [list(map(int, input().split())) for _ in range(N)]
 
 for x in range(N):
     for y in range(M):
@@ -19,4 +16,4 @@ for x in range(N):
 
         memo[x][y] += temp
 
-print(memo[N - 1][M - 1])
+print(memo[-1][-1])
