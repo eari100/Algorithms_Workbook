@@ -9,6 +9,7 @@ import java.io.InputStreamReader;
  * @classfication: implementation
  * @문제 푼 날짜 (자력으로 풂?): 23.10.01 (O)
  **/
+// todo: deque 자료구조를 이용해서 풀어보자
 public class Q5430 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -20,8 +21,7 @@ public class Q5430 {
             String p = br.readLine();
             int len = Integer.parseInt(br.readLine());
             String arrStr = br.readLine();
-            arrStr = arrStr.substring(1);
-            arrStr = arrStr.substring(0, arrStr.length()-1);
+            arrStr = arrStr.substring(1, arrStr.length()-1);
             String[] arr = len == 0 ? new String[0] : arrStr.split(",");
             boolean isReverse = false;
             int str = 0;
