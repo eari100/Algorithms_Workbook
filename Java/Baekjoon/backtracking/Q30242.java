@@ -4,7 +4,6 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
-
 import java.util.StringTokenizer;
 
 /**
@@ -13,28 +12,37 @@ import java.util.StringTokenizer;
  * @reference: https://www.acmicpc.net/source/67327590 (대각선 메모이제이션)
  * @문제 푼 날짜 (혼자 힘으로 풂?): 23.09.30 (O, 대각선 메모이제이션 않았음)
  **/
-// todo: 대각선 메모이제이션하는 방법으로 변경할 것!
 public class Q30242 {
     static int[] queens;
-    static boolean[] visited;
+    static boolean[] down;
+    static boolean[] diagonalRL;
+    static boolean[] diagonalLR;
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int N = Integer.parseInt(br.readLine());
         queens = new int[N];
-        visited = new boolean[N];
+        down = new boolean[N];
+        diagonalRL = new boolean[2*N-1];
+        diagonalLR = new boolean[2*N-1];
 
         StringTokenizer st = new StringTokenizer(br.readLine());
-        for(int i=0;i<N;i++) {
+        for(int x=0;x<N;x++) {
             int y = Integer.parseInt(st.nextToken());
-            if(y != 0 && visited[y-1]) {
-                System.out.print(-1);
-                System.exit(0);
+            int comY = y-1;
+
+            if(y != 0) {
+                if(down[comY] || diagonalRL[x+comY] || diagonalLR[x-comY+(N-1)]) {
+                    System.out.print(-1);
+                    System.exit(0);
+                }
+
+                down[comY] = true;
+                diagonalRL[x+comY] = true;
+                diagonalLR[x-comY+(N-1)] = true;
             }
 
-            queens[i] = y;
-            if(y != 0)
-                visited[y-1] = true;
+            queens[x] = y;
         }
 
         br.close();
@@ -57,45 +65,25 @@ public class Q30242 {
 
         if(fixY == 0) {
             for(int i=0;i<queens.length;i++) {
-                boolean flag = depth == 0;
+                if(down[i]) continue;
+                if(diagonalRL[depth+i]) continue;
+                if(diagonalLR[depth-i+(queens.length-1)]) continue;
 
-                if(visited[i]) continue;
+                nQueens[depth] = i;
 
-                for(int j=0;j<depth;j++) {
-                    int prevY = nQueens[j];
-
-                    if(j - depth == -(prevY - i)) break;
-                    if(j - depth == prevY - i) break;
-
-                    if(j == depth-1)
-                        flag = true;
-                }
-
-                if(flag) {
-                    nQueens[depth] = i;
-                    visited[i] = true;
-                    dfs(nQueens, depth+1);
-                    visited[i] = false;
-                }
+                down[i] = true;
+                diagonalRL[depth+i] = true;
+                diagonalLR[depth-i+(queens.length-1)] = true;
+                dfs(nQueens, depth+1);
+                down[i] = false;
+                diagonalRL[depth+i] = false;
+                diagonalLR[depth-i+(queens.length-1)] = false;
             }
         } else {
-            boolean flag = depth == 0;
             int currY = fixY - 1;
 
-            for(int j=0;j<depth;j++) {
-                int prevY = nQueens[j];
-
-                if(j - depth == -(prevY - currY)) break;
-                if(j - depth == prevY - currY) break;
-
-                if(j == depth-1)
-                    flag = true;
-            }
-
-            if(flag) {
-                nQueens[depth] = currY;
-                dfs(nQueens, depth+1);
-            }
+            nQueens[depth] = currY;
+            dfs(nQueens, depth+1);
         }
     }
 }
