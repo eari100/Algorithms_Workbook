@@ -11,6 +11,7 @@ import java.util.StringTokenizer;
  * @reference: https://myjamong.tistory.com/139
  * @문제 푼 날짜 (자력으로 풂?): 23.10.01 (X, reference 참조)
  **/
+// todo: 에라토스테네스 체로 풀어볼 것
 public class Q1929 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
