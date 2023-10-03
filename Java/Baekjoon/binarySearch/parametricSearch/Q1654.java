@@ -1,4 +1,4 @@
-package Baekjoon.binarySearch;
+package Baekjoon.binarySearch.parametricSearch;
 
 import java.io.BufferedReader;
 import java.io.IOException;
