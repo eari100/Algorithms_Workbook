@@ -29,7 +29,7 @@ public class Q1654 {
 
         br.close();
 
-        long result = 0;
+        long result = 1;
         long str = 1;
         long end = maxLAN;
 
@@ -45,7 +45,7 @@ public class Q1654 {
                 end = mid-1;
             } else {
                 str = mid+1;
-                result = Math.max(result, mid);
+                result = mid;
             }
         }
 
