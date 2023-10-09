@@ -2,17 +2,17 @@
 # @classification: backtracking
 # @문제 푼 날짜 (자력으로 풂?): 23.10.10 (O)
 
-_set = set()
+prime_set = set()
 visited = []
 
 
 def solution(numbers):
-    global _set, visited
+    global prime_set, visited
 
     visited = [False for _ in range(len(numbers))]
     backtracking(0, numbers, '')
 
-    return len(_set)
+    return len(prime_set)
 
 
 def backtracking(depth, numbers, _str):
@@ -27,8 +27,8 @@ def backtracking(depth, numbers, _str):
 
         x = int(_str + numbers[i])
         if is_prime(x):
-            global _set
-            _set.add(x)
+            global prime_set
+            prime_set.add(x)
 
         backtracking(depth+1, numbers, _str + numbers[i])
         visited[i] = False
