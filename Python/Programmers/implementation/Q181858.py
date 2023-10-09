@@ -1,4 +1,4 @@
-# @source: https://school.programmers.co.kr/learn/courses/30/lessons/181858 (무작위로 K개의 수 뽑기
+# @source: https://school.programmers.co.kr/learn/courses/30/lessons/181858 (무작위로 K개의 수 뽑기)
 # @classification: implementation
 # @문제 푼 날짜 (자력으로 풂?): 23.10.10 (O)
 def solution(arr, k):
