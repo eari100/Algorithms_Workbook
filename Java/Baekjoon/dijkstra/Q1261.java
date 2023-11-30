@@ -1,14 +1,16 @@
-package Baekjoon.dfs_bfs.zero_one_bfs;
+package Baekjoon.dijkstra;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.*;
+import java.util.Arrays;
+import java.util.PriorityQueue;
+import java.util.StringTokenizer;
 
 /**
  * @source: https://www.acmicpc.net/problem/1261 (알고스팟)
- * @classification: bfs
- * @문제 푼 날짜 (자력으로 풂?): 23.11.29 (O)
+ * @classification: dijkstra
+ * @문제 푼 날짜 (자력으로 풂?): 23.12.01 (O)
  **/
 public class Q1261 {
     final static int[] nX = {-1, 0, 1, 0};
@@ -20,7 +22,10 @@ public class Q1261 {
         int n = Integer.parseInt(st.nextToken());
         int m = Integer.parseInt(st.nextToken());
         int[][] map = new int[m][n];
-        int[][] brokenWallLog = new int[m][n];
+        int[][] dist = new int[m][n];
+
+        for(int[] arr : dist)
+            Arrays.fill(arr, 10_000);
 
         for(int i=0;i<m;i++) {
             String row = br.readLine();
@@ -28,33 +33,31 @@ public class Q1261 {
             for(int j=0;j<n;j++) {
                 map[i][j] = Character.getNumericValue(row.charAt(j));
             }
-
-            Arrays.fill(brokenWallLog[i], 10_000);
         }
 
         br.close();
 
-        brokenWallLog[0][0] = 0;
+        dist[0][0] = 0;
 
-        ArrayDeque<int[]> deque = new ArrayDeque<>();
-        deque.offer(new int[]{0, 0, 0});
+        PriorityQueue<int[]> pq = new PriorityQueue<>((pq1, pq2) -> pq1[2] - pq2[2]);
+        pq.offer(new int[]{0, 0, 0});
 
-        bfs(map, brokenWallLog, deque);
+        dijkstra(map, dist, pq);
 
-        System.out.print(brokenWallLog[m-1][n-1]);
+        System.out.print(dist[m-1][n-1]);
     }
 
-    private static void bfs(int[][] map, int[][] brokenWallLog, ArrayDeque<int[]> deque) {
-        while( !deque.isEmpty() ) {
-            int[] poll = deque.pollFirst();
+    private static void dijkstra(int[][] map, int[][] dist, PriorityQueue<int[]> pq) {
+        while( !pq.isEmpty() ) {
+            int[] poll = pq.poll();
             int x1 = poll[0];
             int y1 = poll[1];
-            int wall1 = poll[2];
+            int cost = poll[2];
 
             for(int i=0;i<nX.length;i++) {
                 int x2 = x1 + nX[i];
                 int y2 = y1 + nY[i];
-                int wall2 = wall1;
+                int wall2 = cost;
 
                 if(x2 < 0 || x2 >= map.length || y2 < 0 || y2 >= map[0].length)
                     continue;
@@ -62,15 +65,9 @@ public class Q1261 {
                 if(map[x2][y2] == 1)
                     ++wall2;
 
-                if(brokenWallLog[x2][y2] <= wall2)
-                    continue;
-
-                brokenWallLog[x2][y2] = wall2;
-
-                if(map[x2][y2] == 0) {
-                    deque.addFirst(new int[]{x2, y2, wall2});
-                } else {
-                    deque.addLast(new int[]{x2, y2, wall2});
+                if(wall2 < dist[x2][y2]) {
+                    dist[x2][y2] = wall2;
+                    pq.offer(new int[]{x2, y2, wall2});
                 }
             }
         }
