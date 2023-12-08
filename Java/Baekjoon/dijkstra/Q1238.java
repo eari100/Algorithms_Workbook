@@ -79,7 +79,6 @@ public class Q1238 {
             }
         }
 
-        System.out.println(Arrays.toString(distArr));
         return distArr;
     }
 }
