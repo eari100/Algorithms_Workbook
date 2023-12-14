@@ -1,4 +1,4 @@
-package Baekjoon.unionFind;
+package Baekjoon.unionFind.Q1717;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -7,13 +7,11 @@ import java.util.StringTokenizer;
 
 /**
  * @source: https://www.acmicpc.net/problem/1717 (집합의 표현)
- * @classfication: union-find
- * @reference:
- * https://www.youtube.com/watch?v=AMByrd53PHM&feature=emb_title (동빈나 - 합집합 찾기)
- * @문제 푼 날짜 (자력으로 풂?)
- * 1. 22.05.28 (X)
+ * @classification: union-find
+ * @reference: https://www.youtube.com/watch?v=AMByrd53PHM&feature=emb_title (동빈나 - 합집합 찾기)
+ * @문제 푼 날짜 (자력으로 풂?): 22.05.28 (X)
  **/
-public class Q1717 {
+public class D220528 {
     static int[] parents;
     static StringBuilder sb = new StringBuilder();
 
