@@ -10,7 +10,7 @@ import java.util.StringTokenizer;
 /**
  * @source: https://www.acmicpc.net/problem/2206 (벽 부수고 이동하기)
  * @classification: bfs
- * @문제 푼 날짜 (자력으로 풂?): 23.12.16 (X)
+ * @문제 푼 날짜 (자력으로 풂?): 23.12.15 (X)
  **/
 public class Q2206 {
     static int[][] map;
