@@ -1,14 +1,13 @@
-package Baekjoon.backtracking;
+package Baekjoon.TSP;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-// todo: 정해 = tsp
 /**
  * @source: https://www.acmicpc.net/problem/10971 (외판원 순회 2)
- * @classfication: backtracking
+ * @classfication: TSP, backtracking
  * @문제 푼 날짜 (자력으로 풂?): 23.12.17 (O)
  **/
 public class Q10971 {
