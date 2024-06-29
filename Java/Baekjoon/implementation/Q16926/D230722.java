@@ -1,4 +1,4 @@
-package Baekjoon.implementation;
+package Baekjoon.implementation.Q16926;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -8,11 +8,12 @@ import java.util.StringTokenizer;
 
 /**
  * @source: https://www.acmicpc.net/problem/16926 (배열 돌리기 1)
- * @classfication: implementation
+ * @classification: implementation
  * @문제 푼 날짜 (자력으로 풂?): 23.07.22 (O)
+ * memory: 127116KB, time: 1024ms
  **/
 // todo: 더 효율적인 풀이 존재. 업솔빙 때 구상해볼 것
-public class Q16926 {
+public class D230722 {
     final static int[] nX = {1, 0, -1, 0};
     final static int[] nY = {0, 1, 0, -1};
 
