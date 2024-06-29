@@ -11,7 +11,7 @@ import java.util.StringTokenizer;
 /**
  * @source: https://www.acmicpc.net/problem/2150 (Strongly Connected Component)
  * @classification: SCC
- * @문제 푼 날짜 (혼자 힘으로 풂?): 24.04.29 (X)
+ * @문제 푼 날짜 (혼자 힘으로 풂?): 24.06.29 (X)
  **/
 public class Q2150 {
     static ArrayList<Integer>[] graph;
