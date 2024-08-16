@@ -9,3 +9,10 @@
 ### Compliled file ###
 /target/
 **/target
+
+# Visual Studio specific files
+.vs/
+*.user
+
+# Build results
+x64/
