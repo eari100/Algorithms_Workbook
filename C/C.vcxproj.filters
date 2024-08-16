@@ -24,5 +24,8 @@
     <ClCompile Include="Q1000.c">
       <Filter>소스 파일\Baekjoon\implementation</Filter>
     </ClCompile>
+    <ClCompile Include="Q1809.c">
+      <Filter>소스 파일\Baekjoon\implementation</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
