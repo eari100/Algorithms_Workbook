@@ -1,4 +1,4 @@
-package Baekjoon.floydWarshall;
+package Baekjoon.floydWarshall.Q11404;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -7,12 +7,11 @@ import java.util.StringTokenizer;
 
 /**
  * @source: https://www.acmicpc.net/problem/11404 (플로이드)
- * @classfication: floyd-warshall
+ * @classification: floyd-warshall
  * @reference: https://youtu.be/dDDy2bEZRA8?list=PLtqbFd2VIQv4O6D6l9HcD732hdrnYb6CY&t=426
- * @문제 푼 날짜 (자력으로 풂?)
- * 1. 22.07.09 (X)
+ * @문제 푼 날짜 (자력으로 풂?): 22.07.09 (X)
  **/
-public class Q11404 {
+public class D220709 {
     static final int INF = 1000000000;
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
