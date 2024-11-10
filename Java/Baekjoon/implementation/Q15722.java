@@ -9,6 +9,7 @@ import java.io.InputStreamReader;
  * @classification: implementation
  * @문제 푼 날짜 (자력으로 풂?): 24.11.10 (O)
  **/
+// todo: 더 효율적으로 풀어보자
 public class Q15722 {
     public static void main(String[] args) throws IOException {
         boolean[][] map = new boolean[2000][2000];
