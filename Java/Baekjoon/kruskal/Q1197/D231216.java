@@ -1,4 +1,4 @@
-package Baekjoon.kruskal;
+package Baekjoon.kruskal.Q1197;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -9,10 +9,9 @@ import java.util.StringTokenizer;
 /**
  * @source: https://www.acmicpc.net/problem/1197 (최소 스패닝 트리)
  * @classification: kruskal, mst
- * @문제 푼 날짜 (자력으로 풂?)
- * 1. 23.12.16 (O)
+ * @문제 푼 날짜 (자력으로 풂?): 23.12.16 (O)
  **/
-public class Q1197 {
+public class D231216 {
     static int[] parents;
 
     public static void main(String[] args) throws IOException {
