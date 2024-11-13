@@ -1,4 +1,4 @@
-package Baekjoon.backtracking;
+package Baekjoon.backtracking.Q15666;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -11,7 +11,7 @@ import java.util.*;
  * @문제 푼 날짜 (자력으로 풂?)
  * 1. 22.07.29 (O)
  **/
-public class Q15666 {
+public class D220729 {
     static int[] memo;
     static int M;
     static StringBuilder sb;
