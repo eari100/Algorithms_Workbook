@@ -42,7 +42,7 @@ public class Q12101 {
 
             if(sum2 > n) break;
 
-            bt(memo.equals("") ? i+"" : memo+"+"+i, sum2);
+            bt(memo.isEmpty() ? i+"" : memo+"+"+i, sum2);
         }
     }
 }
