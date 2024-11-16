@@ -1,4 +1,4 @@
-package Baekjoon.implementation;
+package Baekjoon.greedy;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -8,10 +8,9 @@ import java.util.StringTokenizer;
 
 /**
  * @source: https://www.acmicpc.net/problem/13164 (행복 유치원)
- * @classfication: implementation
+ * @classfication: greedy
  * @문제 푼 날짜 (자력으로 풂?): 24.11.17 (O)
  **/
-// todo: greedy로 효율적으로
 public class Q13164 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
