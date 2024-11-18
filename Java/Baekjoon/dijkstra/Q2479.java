@@ -10,6 +10,7 @@ import java.util.*;
  * @classfication: dijkstra
  * @문제 푼 날짜 (자력으로 풂?): 24.11.18 (O)
  **/
+// todo: bfs가 더 효율적
 public class Q2479 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
