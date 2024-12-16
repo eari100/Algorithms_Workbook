@@ -1,4 +1,4 @@
-package Baekjoon.backtracking;
+package Baekjoon.backtracking.Q14888;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -10,7 +10,7 @@ import java.util.Arrays;
  * @classfication: backtracking
  * @문제 푼 날짜 (자력으로 풂?): 23.04.30 (X, maxValue 가 음수나올 경우를 생각하지 못함, 풀이식은 맞음, 백트래킹하는 부분에서 디버깅을 잘 못해서 오래 걸림)
  **/
-public class Q14888 {
+public class D230430 {
     static int maxValue = Integer.MIN_VALUE;
     static int minValue = Integer.MAX_VALUE;
     static int[] nums;
