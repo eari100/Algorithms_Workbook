@@ -1,4 +1,4 @@
-package Baekjoon.implementation;
+package Baekjoon.bruteforce.Q14889;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -11,7 +11,7 @@ import java.util.StringTokenizer;
  * @문제 푼 날짜 (자력으로 풂?): 23.04.29 (O)
  * @reference: https://www.acmicpc.net/source/58349778 (더 효율적인 방법)
  **/
-public class Q14889 {
+public class D230429 {
     static boolean[] startTeam;
     static int[][] board;
     static int minGapPower = Integer.MAX_VALUE;
