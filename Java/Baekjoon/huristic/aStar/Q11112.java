@@ -10,6 +10,7 @@ import java.util.PriorityQueue;
  * @source: https://www.acmicpc.net/problem/11112 (Eight puzzle)
  * @classification: A*
  * @문제 푼 날짜 (자력으로 풂?): 24.01.01 (X)
+ * @reference: https://blog.naver.com/PostView.naver?blogId=mario002&logNo=221958671537
  **/
 // todo: 9! = 362880 이기 때문에 BFS로도 가능하다고 하네요
 public class Q11112 {
