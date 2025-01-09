@@ -8,7 +8,7 @@ using namespace std;
  * @classification: brute-force
  * @문제 푼 날짜 (자력으로 풂?): 25.01.09 (O)
  **/
-bool isPalindrome(int nums[], int len) // 배열의 크기 len을 인자로 추가
+bool isPalindrome(int* nums, int len) // 배열의 크기 len을 인자로 추가
 {
     for (int i = 0; i < len / 2; i++)
     {
