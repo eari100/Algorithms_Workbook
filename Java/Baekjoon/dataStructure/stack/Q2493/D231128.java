@@ -1,4 +1,4 @@
-package Baekjoon.dataStructure.stack;
+package Baekjoon.dataStructure.stack.Q2493;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -11,7 +11,7 @@ import java.util.StringTokenizer;
  * @classfication: stack
  * @문제 푼 날짜 (자력으로 풂?): 23.11.28 (X, 물체 구상 시 변형하는 사고를 가질 것)
  **/
-public class Q2493 {
+public class D231128 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int N = Integer.parseInt(br.readLine());
