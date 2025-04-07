@@ -65,6 +65,6 @@ public class Q150368 {
     }
 
     public static void main(String[] args) {
-        System.out.println("result = " + Arrays.toString(solution(new int[][]{{40, 10000}, {25, 10000}}, new int[]{7000, 9000})));
+        solution(new int[][]{{40, 10000}, {25, 10000}}, new int[]{7000, 9000});
     }
 }
