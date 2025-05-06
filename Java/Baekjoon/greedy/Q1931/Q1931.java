@@ -1,4 +1,4 @@
-package Baekjoon.greedy;
+package Baekjoon.greedy.Q1931;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -9,7 +9,7 @@ import java.util.StringTokenizer;
 
 /**
  * @source: https://www.acmicpc.net/problem/1931
- * @classfication: greedy, Activity Selection problem
+ * @classification: greedy, Activity Selection problem
  * @reference: https://st-lab.tistory.com/145
  **/
 public class Q1931 {
