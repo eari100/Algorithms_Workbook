@@ -9,6 +9,7 @@ using namespace std;
  * @classification: brute-force
  * @문제 푼 날짜 (자력으로 풂?): 25.05.28 (O)
  **/
+// https://www.acmicpc.net/source/19851084 (조합 풀이)
 int main()
 {
   int len, cnt, answer = 0;
