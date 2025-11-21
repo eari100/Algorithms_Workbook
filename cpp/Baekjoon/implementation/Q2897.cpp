@@ -3,9 +3,9 @@
 using namespace std;
 
 /**
- * @source: https://www.acmicpc.net/problem/1958 (LCS 3)
- * @classification: LCS
- * @문제 푼 날짜 (자력으로 풂?): 25.11.15 (O)
+ * @source: https://www.acmicpc.net/problem/1957 (몬스터 트럭)
+ * @classification: implementation
+ * @문제 푼 날짜 (자력으로 풂?): 25.11.21 (O)
  **/
 int r, c, answer[5];
 char board[50][50];
