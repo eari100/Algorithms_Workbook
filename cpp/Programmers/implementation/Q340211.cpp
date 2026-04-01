@@ -2,6 +2,11 @@
 
 using namespace std;
 
+/**
+ * @source: https://school.programmers.co.kr/learn/courses/30/lessons/340211 ([PCCP 기출문제] 3번 / 충돌위험 찾기)
+ * @classification: implementation
+ * @문제 푼 날짜 (자력으로 풂?): 26.04.01 (O)
+ **/
 int solution(vector<vector<int>> points, vector<vector<int>> routes) {
     int answer = 0;
     vector<int> target(routes.size(), 0);
