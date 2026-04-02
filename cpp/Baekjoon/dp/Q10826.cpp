@@ -5,7 +5,7 @@ using namespace std;
 /**
  * @source: https://www.acmicpc.net/problem/10826 (피보나치 수 4)
  * @classification: dp, arbitrary_precision
- * @문제 푼 날짜 (자력으로 풂?): 25.11.08 (X)
+ * @문제 푼 날짜 (자력으로 풂?): 26.04.02 (O)
  **/
 int dp[2][2500+1], n;
 int sum[2500+1];
